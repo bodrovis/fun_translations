@@ -34,6 +34,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'webmock', '~> 3.14'
 
   spec.metadata = {
-    'rubygems_mfa_required' => 'true'
+    'source_code_uri' => 'https://github.com/bodrovis/fun_translations',
+    'rubygems_mfa_required' => 'true',
+    'changelog_uri' => 'https://github.com/bodrovis/fun_translations/blob/master/CHANGELOG.md',
+    'bug_tracker_uri' => 'https://github.com/bodrovis/fun_translations/issues'
   }
 end
