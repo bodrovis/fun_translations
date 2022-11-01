@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 module FunTranslations
+  # This class represents a response returned by FunTranslation API
   class Translation
     attr_reader :translated_text, :original_text, :translation, :audio, :speed, :tone
 
+    # Initializes a new Translation object
     def initialize(raw_translation)
       if raw_translation['translated'].respond_to?(:key?) && raw_translation['translated'].key?('audio')
         @audio = raw_translation['translated']['audio']

@@ -1,9 +1,12 @@
 # frozen_string_literal: true
 
 module FunTranslations
+  # This module prepares a connection object
   module Connection
     BASE_URL = 'https://api.funtranslations.com'
 
+    # Prepares a new connection object
+    # @param client [FunTranslations::Client]
     def connection(client)
       Faraday.new(options(client)) do |faraday|
         faraday.adapter Faraday.default_adapter

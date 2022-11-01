@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module FunTranslations
+  # FunTranslations API client
   class Client
     include FunTranslations::Request
 
@@ -10,6 +11,11 @@ module FunTranslations
       @token = token
     end
 
+    # Performs translation
+    # @return [FunTranslations::Translation]
+    # @param endpoint [String, Symbol]
+    # @param text [String]
+    # @param params [Hash]
     def translate(endpoint, text, params = {})
       FunTranslations::Translation.new(
         post(
