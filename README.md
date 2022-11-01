@@ -7,6 +7,8 @@
 
 This is a Ruby client that enables you to easily perform translations using [FunTranslations API](https://api.funtranslations.com/).
 
+*If would like to learn how this gem was built, please check out [this and subsequent lessons](https://www.youtube.com/watch?v=FEfHExlN6-8) on my YT channel (currently only available in Russian).*
+
 ## Prerequisites
 
 [Ruby 2.7+](https://www.ruby-lang.org/en/) and [RubyGems subsystem](https://rubygems.org/) is required.
