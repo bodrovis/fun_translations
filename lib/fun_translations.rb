@@ -2,6 +2,7 @@
 
 require 'zeitwerk'
 require 'faraday'
+require 'json'
 
 loader = Zeitwerk::Loader.for_gem
 loader.setup
