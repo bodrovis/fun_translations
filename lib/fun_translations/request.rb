@@ -20,7 +20,8 @@ module FunTranslations
     # Parses response body using JSON
     # or raises an error if the status code is not 2xx
     def respond_with(response)
-      body = response.body.empty? ? response.body : JSON.parse(response.body)
+      raw_body = response.body
+      body = raw_body.empty? ? raw_body : JSON.parse(raw_body)
 
       respond_with_error(response.status, body['error']) if body.key?('error') || !response.success?
 

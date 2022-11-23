@@ -7,10 +7,12 @@ module FunTranslations
 
     # Initializes a new Translation object
     def initialize(raw_translation)
-      if raw_translation['translated'].respond_to?(:key?) && raw_translation['translated'].key?('audio')
-        @audio = raw_translation['translated']['audio']
+      translated = raw_translation['translated']
+
+      if translated.respond_to?(:key?) && translated.key?('audio')
+        @audio = translated['audio']
       else
-        @translated_text = raw_translation['translated']
+        @translated_text = translated
       end
 
       @original_text = raw_translation['text']

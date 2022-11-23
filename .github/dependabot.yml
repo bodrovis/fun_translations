@@ -8,5 +8,4 @@ updates:
   - package-ecosystem: "bundler" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
-    target-branch: "develop"
+      interval: "monthly"
