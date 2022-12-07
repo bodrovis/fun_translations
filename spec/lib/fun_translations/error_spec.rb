@@ -88,6 +88,6 @@ RSpec.describe FunTranslations::Error do
         test_client,
         text: 'My text'
       )
-    end.to raise_error(described_class)
+    end.to raise_error(described_class, 'Unknown error.')
   end
 end
