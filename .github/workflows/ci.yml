@@ -24,4 +24,5 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
+        token: ${{ secrets.CODECOV_TOKEN }}
     - run: bundle exec rake rubospec
