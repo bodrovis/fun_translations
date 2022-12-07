@@ -6,6 +6,9 @@ on:
   push:
     branches: [ master ]
 
+env:
+  CODECOV_TOKEN: 8d6689bc-569a-40d4-ae0e-a3adbf3e5181
+
 jobs:
   test:
     strategy:
@@ -24,5 +27,4 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
-        token: ${{ secrets.CODECOV_TOKEN }}
     - run: bundle exec rake rubospec
