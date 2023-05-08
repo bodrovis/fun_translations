@@ -2,7 +2,6 @@
 
 ![Gem](https://img.shields.io/gem/v/fun_translations)
 ![CI](https://github.com/bodrovis/fun_translations/actions/workflows/ci.yml/badge.svg)
-[![Test Coverage](https://codecov.io/gh/bodrovis/fun_translations/graph/badge.svg)](https://codecov.io/gh/bodrovis/fun_translations)
 ![Downloads total](https://img.shields.io/gem/dt/fun_translations)
 
 This is a Ruby client that enables you to easily perform translations using [FunTranslations API](https://api.funtranslations.com/).
